@@ -8,9 +8,11 @@ const cx = classNames.bind(styles);
 
 function Header() {
     return (
-        <Container fluid className={cx('header')}>
-            <NavList />
-        </Container>
+       <header>
+            <Container fluid className={cx('header')}>
+                <NavList />
+            </Container>
+       </header>
     );
 }
 

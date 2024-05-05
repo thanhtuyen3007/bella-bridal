@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { publicRoutes } from '~/routes/route';
 import '~/App.module.scss';
 import DefaultLayout from '~/componentes/Layouts/DefaultLayout/DefaultLayout';
-import { logDOM } from '@testing-library/react';
 
 function App() {
     return (

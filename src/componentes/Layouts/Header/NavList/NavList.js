@@ -38,7 +38,7 @@ function NavList() {
     ];
 
     return (
-        <Container fluid="md" className='position-relative'>
+        <Container fluid="md" className="position-relative">
             <Navbar expand="lg" className={cx('wrapper-nav')}>
                 <Navbar.Brand className={cx('nav-brand')} href="/">
                     <img src={images.logo} alt="vay-cuoi-bella" />
