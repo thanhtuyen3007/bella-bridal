@@ -1,0 +1,19 @@
+.footer-wrapper {
+    background-color: var(--footer-bg-color);
+    color: var(--text-white);
+}
+.branch-item {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+
+    .branch-item-name {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    .branch-item-info {
+        text-transform: capitalize;
+    }
+    .branch-item-icon {
+        margin-right: 10px;
+    }
+}

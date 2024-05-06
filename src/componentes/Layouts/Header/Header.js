@@ -8,11 +8,11 @@ const cx = classNames.bind(styles);
 
 function Header() {
     return (
-       <header>
+        <header>
             <Container fluid className={cx('header')}>
                 <NavList />
             </Container>
-       </header>
+        </header>
     );
 }
 

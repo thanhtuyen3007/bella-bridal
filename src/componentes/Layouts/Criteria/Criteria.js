@@ -7,8 +7,8 @@ import images from '~/assets';
 
 function Criteria() {
     return (
-        <section className='criteria py-4'>
-            <Container fluid>
+        <section className="criteria py-4">
+            <Container>
                 <Row className="">
                     <Col className="text-center py-4" md={6}>
                         <img
