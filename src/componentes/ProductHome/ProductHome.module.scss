@@ -1,0 +1,40 @@
+.wrapper {
+    width: 100%;
+    background-color: var(--secondary-bg-color);
+}
+.pro-title {
+    display: block;
+    text-align: center;
+    margin: 30px;
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.pro-img-item {
+    width: 100%;
+}
+.pro-img {
+    width: 100%;
+    border-radius: 50px 0 50px 0;
+    margin-right: 30px;
+}
+.pro-control {
+    font-size: 3.5rem;
+    line-height: 40px;
+    color: var(--hover-bg-color);
+    opacity: 0.8;
+    .pro-btn__left {
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+    .pro-btn__right {
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+    &:hover {
+        cursor: pointer;
+        opacity: 1;
+    }
+}

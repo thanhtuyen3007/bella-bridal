@@ -2,15 +2,17 @@ import React from 'react';
 import Header from '~/componentes/Layouts/Header/Header';
 import Footer from '~/componentes/Layouts/Footer/Footer';
 import Criteria from '~/componentes/Layouts/Criteria/Criteria';
+import classNames from 'classnames/bind';
+import styles from './DefaultLayout.module.scss';
 
-import './DefaultLayout.module.scss';
+const cx = classNames.bind(styles);
 
 function DefaultLayout({ children }) {
     return (
-        <div className="default-wrapper">
+        <div className={cx('wrapper')}>
             <Header />
             <main>
-                <div>{children}</div>
+                <div className={cx('content')}>{children}</div>
                 <Criteria />
             </main>
             <Footer />

@@ -1,15 +1,12 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import { Container, Row, Col } from 'react-bootstrap';
-import { faScissors, faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
 import images from '~/assets';
 
 function Criteria() {
     return (
-        <section className="criteria py-4">
-            <Container>
-                <Row className="">
+        <section className="criteria py-5">
+            <Container fluid className="py-5">
+                <Row>
                     <Col className="text-center py-4" md={6}>
                         <img
                             className="d-block mx-auto mb-5 "

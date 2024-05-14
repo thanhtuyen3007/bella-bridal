@@ -1,0 +1,31 @@
+.wrapper {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.slider-img {
+    width: 100%;
+    max-height: 551px;
+}
+.slider-list__img {
+    width: 100%;
+    position: relative;
+    transition: 0.5s;
+    // .btn-slide__left,
+    // .btn-slide__right {
+    //     position: absolute;
+    //     top: 50%;
+    //     font-size: 7rem;
+    //     color: var(--text-content);
+    //     &:hover {
+    //         cursor: pointer;
+    //         color: var(--text-white);
+    //     }
+    // }
+    // .btn-slide__left {
+    //     left: 30px;
+    // }
+    // .btn-slide__right {
+    //     right: 30px;
+    // }
+}
