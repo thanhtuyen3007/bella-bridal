@@ -12,23 +12,46 @@ const cx = classNames.bind(styles);
 function ProductHome() {
     const imgRef = useRef();
     const listImgRef = useRef();
+    const timerRef = useRef(null);
     const lengthListProduct = listProduct.length - 2;
     const [widthImg, setWidthImg] = useState();
     const [currentIndex, setCurrentIndex] = useState(0);
-    console.log(currentIndex);
+
+    const goToPrev = () => {
+        clearTimeout(timerRef.current);
+        if (currentIndex === 0) {
+            setCurrentIndex(0);
+            let newWidth = 0;
+            setWidthImg(newWidth);
+        } else {
+            setCurrentIndex(currentIndex - 1);
+            let newWidth = imgRef.current.offsetWidth * currentIndex * -1;
+            setWidthImg(newWidth);
+        }
+    };
+    const goToNext = () => {
+        clearTimeout(timerRef.current);
+        if (currentIndex === lengthListProduct) {
+            setCurrentIndex(0);
+            setWidthImg(0);
+        } else {
+            setCurrentIndex(currentIndex + 1);
+            let newWidth = imgRef.current.offsetWidth * currentIndex * -1;
+            setWidthImg(newWidth);
+        }
+    };
 
     useEffect(() => {
-        setTimeout(() => {
+        timerRef.current = setTimeout(() => {
             if (currentIndex === lengthListProduct) {
                 setCurrentIndex(0);
-                let newWidth = 0;
-                setWidthImg(newWidth);
+                setWidthImg(0);
             } else {
                 setCurrentIndex(currentIndex + 1);
                 let newWidth = imgRef.current.offsetWidth * currentIndex * -1;
                 setWidthImg(newWidth);
             }
-        }, 3000);
+        }, 2500);
     }, [currentIndex]);
     return (
         <section className={cx('wrapper')}>
@@ -62,12 +85,12 @@ function ProductHome() {
                     <FontAwesomeIcon
                         className={cx('pro-btn__left')}
                         icon={faAngleLeft}
-                        // onClick={goToPrev}
+                        onClick={goToPrev}
                     />
                     <FontAwesomeIcon
                         className={cx('pro-btn__right')}
                         icon={faAngleRight}
-                        // onClick={goToNext}
+                        onClick={goToNext}
                     />
                 </div>
             </Container>

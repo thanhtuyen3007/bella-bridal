@@ -1,8 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 
-
 import classNames from 'classnames/bind';
 import styles from './Slider.module.scss';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
@@ -30,15 +30,15 @@ function Slider({ src, listSlider }) {
         <section className={cx('wrapper')}>
             {listSlider ? (
                 <div className={cx('slider-list__img')}>
-                  
-
                     <div className={cx('slider-item__img')}>
-                        <img
-                            ref={imgRef}
-                            className={cx('slider-img')}
-                            src={listSlider[curentIndex]}
-                            alt="bella"
-                        />
+                      <Link to={'/'}>
+                            <img
+                                ref={imgRef}
+                                className={cx('slider-img')}
+                                src={listSlider[curentIndex]}
+                                alt="bella"
+                            />
+                      </Link>
                     </div>
                 </div>
             ) : (

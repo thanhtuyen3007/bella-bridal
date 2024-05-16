@@ -16,7 +16,6 @@
 .pro-img {
     width: 100%;
     border-radius: 50px 0 50px 0;
-    margin-right: 30px;
 }
 .pro-control {
     font-size: 3.5rem;
@@ -26,12 +25,12 @@
     .pro-btn__left {
         position: absolute;
         top: 50%;
-        left: 0;
+        left: -20px;
     }
     .pro-btn__right {
         position: absolute;
         top: 50%;
-        right: 0;
+        right: -20px;
     }
     &:hover {
         cursor: pointer;
