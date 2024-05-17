@@ -1,13 +1,13 @@
 import dataCollections from '~/dataCollections';
 
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind';
 import styles from './Collections.module.scss';
-import 'react-slideshow-image/dist/styles.css';
 
 const cx = classNames.bind(styles);
 
@@ -39,7 +39,11 @@ function Collections({ data, reverse = false }) {
         <>
             <Row className={classes}>
                 <Col md={4}>
-                    <Slide {...properties}>
+                    <Slide
+                        duration={3000}
+                        transitionDuration={500}
+                        {...properties}
+                    >
                         {data.dataImg.slice(0, 3).map((dressImg, index) => (
                             <div key={index}>
                                 <img
