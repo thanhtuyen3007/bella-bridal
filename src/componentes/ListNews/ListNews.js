@@ -1,7 +1,9 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
+import {
+    properties,
+    responsiveSettings,
+} from '~/componentes/CustomSlide/CustomSlide';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import styles from './ListNews.module.scss';
@@ -13,48 +15,6 @@ import NewItem from './NewItem';
 const cx = classNames.bind(styles);
 
 function ListNews() {
-    const buttonStyle = {
-        color: 'var(--hover-bg-color)',
-        background: 'none',
-        border: 'none',
-        fontSize: '3.5rem',
-        zIndex: '1',
-    };
-    const properties = {
-        prevArrow: (
-            <button style={{ ...buttonStyle }}>
-                <FontAwesomeIcon icon={faAngleLeft} />
-            </button>
-        ),
-        nextArrow: (
-            <button style={{ ...buttonStyle }}>
-                <FontAwesomeIcon icon={faAngleRight} />
-            </button>
-        ),
-    };
-    const responsiveSettings = [
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-            },
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            },
-        },
-        {
-            breakpoint: 0,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            },
-        },
-    ];
     return (
         <section className={cx('wrapper')}>
             <Container>
@@ -72,10 +32,9 @@ function ListNews() {
                 <div className="overflow-hidden py-5">
                     <Slide
                         duration={3000}
-                        transitionDuration={400}
+                        transitionDuration={600}
                         {...properties}
                         responsive={responsiveSettings}
-                        indicators={true}
                     >
                         {dataNews.map((dataNews, index) => (
                             <NewItem key={index} data={dataNews} />

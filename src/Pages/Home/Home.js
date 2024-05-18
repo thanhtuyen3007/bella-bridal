@@ -7,6 +7,7 @@ import Slider from '~/componentes/Slider/Slider';
 import ProductHome from '~/componentes/ProductHome/ProductHome';
 import ListCollections from '~/componentes/Collections/ListCollections';
 import ListNews from '~/componentes/ListNews/ListNews';
+import ListFeedback from '~/componentes/ListFeedback/ListFeedback';
 const cx = classNames.bind(styles);
 function Home() {
 
@@ -20,6 +21,7 @@ function Home() {
             <ProductHome />
             <ListCollections/>
             <ListNews/>
+            <ListFeedback/>
             
         </div>
     );
