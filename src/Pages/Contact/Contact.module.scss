@@ -1,0 +1,32 @@
+.contact-title {
+    border-bottom: 1px solid #ccc;
+    & h2 {
+        font-size: 2.5rem;
+        line-height: 1.5;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: var(--text-content);
+    }
+}
+.contact-info {
+    margin-top: 20px;
+    line-height: 2;
+    font-size: 1.8rem;
+    color: var(--text-content);
+}
+.btn-form {
+    padding: 10px 25px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-white);
+    text-transform: uppercase;
+    background-color: var(--btn-form-color);
+    border: none;
+    border-radius: 0;
+    &:hover {
+        cursor: pointer;
+        color: var(--btn-form-color);
+        border: 1px solid var(--btn-form-color);
+        background-color: var(--secondary-bg-color);
+    }
+}

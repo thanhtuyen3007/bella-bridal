@@ -1,10 +1,7 @@
 import React from 'react';
 import FeedbackItem from './FeedbackItem';
 import { dataFeedback } from '~/dataFeedback';
-import {
-    properties,
-    responsiveSettings,
-} from '~/componentes/CustomSlide/CustomSlide';
+import { properties } from '~/componentes/CustomSlide/CustomSlide';
 
 import { Container } from 'react-bootstrap';
 import { Slide } from 'react-slideshow-image';

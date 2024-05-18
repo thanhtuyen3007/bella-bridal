@@ -10,9 +10,11 @@ function Slider({ src, listSlider }) {
     const imgRef = useRef();
     const [curentIndex, setIndex] = useState(0);
     useEffect(() => {
-        setTimeout(() => {
-            goToNext();
-        }, 4000);
+        if (listSlider) {
+            setTimeout(() => {
+                goToNext();
+            }, 4000);
+        }
     }, [curentIndex]);
 
     const goToPrev = () => {
@@ -31,14 +33,14 @@ function Slider({ src, listSlider }) {
             {listSlider ? (
                 <div className={cx('slider-list__img')}>
                     <div className={cx('slider-item__img')}>
-                      <Link to={'/'}>
+                        <Link to={'/'}>
                             <img
                                 ref={imgRef}
                                 className={cx('slider-img')}
                                 src={listSlider[curentIndex]}
                                 alt="bella"
                             />
-                      </Link>
+                        </Link>
                     </div>
                 </div>
             ) : (
