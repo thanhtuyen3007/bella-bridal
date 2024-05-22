@@ -10,7 +10,7 @@ import listProduct from './listProduct';
 const cx = classNames.bind(styles);
 
 function ProductHome() {
-    const imgRef = useRef();
+    const imgRef = useRef(null);
     const listImgRef = useRef();
     const timerRef = useRef(null);
     const lengthListProduct = listProduct.length - 2;
@@ -25,7 +25,9 @@ function ProductHome() {
             setWidthImg(newWidth);
         } else {
             setCurrentIndex(currentIndex - 1);
-            let newWidth = imgRef.current.offsetWidth * currentIndex * -1;
+            let newWidth = imgRef.current
+                ? imgRef.current.offsetWidth * currentIndex * -1
+                : 0;
             setWidthImg(newWidth);
         }
     };
@@ -36,7 +38,9 @@ function ProductHome() {
             setWidthImg(0);
         } else {
             setCurrentIndex(currentIndex + 1);
-            let newWidth = imgRef.current.offsetWidth * currentIndex * -1;
+            let newWidth = imgRef.current
+                ? imgRef.current.offsetWidth * currentIndex * -1
+                : 0;
             setWidthImg(newWidth);
         }
     };
@@ -52,6 +56,9 @@ function ProductHome() {
                 setWidthImg(newWidth);
             }
         }, 2500);
+        return () => {
+            clearTimeout(timerRef.current);
+        };
     }, [currentIndex]);
     return (
         <section className={cx('wrapper')}>

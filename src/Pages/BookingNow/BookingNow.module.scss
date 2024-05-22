@@ -1,0 +1,42 @@
+.booking-section {
+    margin-top: 80px;
+}
+.form-title__wrap {
+    max-width: 420px;
+    text-align: center;
+    margin: 0 auto;
+}
+.form-title {
+    font-size: 4rem;
+    padding: 20px 0;
+    text-transform: uppercase;
+    color: var(--text-title);
+}
+.form-title__text {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: #8a8a8a;
+}
+
+.form-booking {
+    max-width: 420px;
+    margin: 30px auto;
+}
+
+.btn-form {
+    width: 100%;
+    padding: 20px 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-white);
+    text-transform: uppercase;
+    background-color: var(--btn-form-color);
+    border: none;
+    border-radius: 0;
+    &:hover {
+        cursor: pointer;
+        color: var(--btn-form-color);
+        border: 1px solid var(--btn-form-color);
+        background-color: var(--secondary-bg-color);
+    }
+}

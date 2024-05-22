@@ -1,0 +1,37 @@
+.wrapper {
+    text-align: center;
+}
+.title {
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: var(--text-primary);
+    text-align: center;
+    padding: 40px 0;
+}
+.content {
+    text-align: start;
+    font-size: 1.6rem;
+    color: var(--text-content);
+}
+// recommend post
+.title-rec {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #f4f4f4;
+}
+
+.title-item {
+    font-size: 1.6rem;
+    color: var(--text-content);
+    text-align: start;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
