@@ -18,7 +18,7 @@ $spacing: 148px;
     }
 }
 .nav-item {
-    padding: 2.5rem 1rem;
+    line-height: 4.5;
     font-size: 1.6rem;
     transition: 0.5s all ease;
     &:hover {
@@ -29,10 +29,11 @@ $spacing: 148px;
             color: var(--text-white);
         }
     }
-    .nav-item-text {
-        color: var(--text-content);
-        text-transform: uppercase;
-    }
+}
+.nav-item-text {
+    padding: 2.5rem 1rem;
+    color: var(--text-content);
+    text-transform: uppercase;
 }
 .spacing {
     margin-left: $spacing;
@@ -53,7 +54,6 @@ $spacing: 148px;
         position: absolute;
         top: 10px;
         left: calc(50% - 30px);
-       
     }
     .nav-dropdown {
         position: relative;

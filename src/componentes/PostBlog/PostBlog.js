@@ -5,11 +5,11 @@ import classNames from 'classnames/bind';
 import styles from './PostBlog.module.scss';
 import Slider from '~/componentes/Slider/Slider';
 import RecommendPost from './RecommendPost';
-import PostNew from './PostNew';
 
 const cx = classNames.bind(styles);
 
-function PostBlog({data, children}) {
+function PostBlog({ data, children }) {
+    console.log(data);
     return (
         <section className={cx('wrapper')}>
             <Slider
@@ -18,10 +18,10 @@ function PostBlog({data, children}) {
                 }
             />
             <Container>
-                <h1 className={cx('title')}>{data ?  data.title : ''}</h1>
+                <h1 className={cx('title')}>{data ? data.title : ''}</h1>
                 <Row className="mt-5">
                     {children}
-                    <RecommendPost/>
+                    <RecommendPost />
                 </Row>
             </Container>
         </section>

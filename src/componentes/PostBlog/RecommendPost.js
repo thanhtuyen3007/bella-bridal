@@ -12,7 +12,7 @@ function RecommendPost() {
     return (
         <Col md={4} className="d-none d-md-block">
             <ListGroup>
-            <h3 className={cx('title-rec')}>bài viết xem nhiều</h3>
+                <h3 className={cx('title-rec')}>bài viết xem nhiều</h3>
                 {dataNews.slice(2, 8).map((dataNew, index) => (
                     <ListGroup.Item
                         className="border-0 border-bottom"

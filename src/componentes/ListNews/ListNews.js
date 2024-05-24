@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import {
     properties,
     responsiveSettings,
@@ -10,7 +10,7 @@ import styles from './ListNews.module.scss';
 import classNames from 'classnames/bind';
 import images from '~/assets';
 import dataNews from '~/dataNews';
-import NewItem from './NewItem';
+import NewItem from './NewItemHome';
 
 const cx = classNames.bind(styles);
 
@@ -19,7 +19,7 @@ function ListNews() {
         <section className={cx('wrapper')}>
             <Container>
                 <div className={cx('icon-line')}>
-                    <img src={images.iconLine} />
+                    <img src={images.iconLine} alt='iconLine' />
                 </div>
                 <div className={cx('title-block')}>
                     <h1 className={cx('title-text')}>tin tức</h1>
@@ -43,7 +43,7 @@ function ListNews() {
                 </div>
 
                 <div className={cx('icon-line')}>
-                    <img src={images.iconLine} />
+                    <img src={images.iconLine} alt='iconLine' />
                 </div>
             </Container>
         </section>

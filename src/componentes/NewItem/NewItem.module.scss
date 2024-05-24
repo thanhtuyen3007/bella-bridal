@@ -1,0 +1,36 @@
+.newItem-img {
+    width: 100%;
+    max-height: 233px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    object-position: 50% 0;
+}
+.newItem-content {
+    position: relative;
+}
+.newItem-title {
+    font-size: 1.6rem;
+    color: var(--text-content);
+    text-align: start;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    &::after {
+        content: '';
+        width: 30px;
+        height: 3px;
+        background-color: var(--text-primary);
+        position: absolute;
+        margin-top: 11px;
+        left: 0;
+        bottom: calc(50% - 13px);
+    }
+}
+.newItem-day {
+    color: #ccc;
+}

@@ -1,31 +1,32 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import classNames from 'classnames/bind';
-import styles from './News.module.scss';
+
+import styles from './WeddingPhoto.module.scss';
+import { Container, Row, Col } from 'react-bootstrap';
 import Slider from '~/componentes/Slider/Slider';
-import dataNews from '~/dataNews';
 import TitleSectiton from '~/componentes/TitleSectiton/TitleSectiton';
 import NewItem from '~/componentes/NewItem/NewItem';
+import dataWeddingPhoto from '~/dataWeddingPhoto';
 
 const cx = classNames.bind(styles);
 
-function News() {
+function WeddingPhoto() {
     return (
         <section className={cx('wrapper')}>
             <Slider
                 src={
-                    'https://bellabridal.vn/public/upload/images/slides/Untitled-1.jpg'
+                    'https://bellabridal.vn/public/upload/files/z4274128720218_1a6cc312a62a55c5798c8b1aa02ccbe9%20(1).jpg'
                 }
-            ></Slider>
+            />
             <Container>
                 <TitleSectiton
-                    title={'tin tức'}
+                    title={'chụp ảnh cưới'}
                     desc={
-                        'Tin tức về xu hướng váy cưới mới nhất từ trong đến ngoài nước. Các sự kiện đặc biệt đang diễn ra tại Bella Bridal.'
+                        'Bạn đang tìm kiếm dịch vụ chụp ảnh cưới đẹp uy tín, chuyên nghiệp ? Hãy đến với TuArt Wedding để được trải nghiệm dịch vụ chụp ảnh cưới đẹp và đẳng cấp của chúng tôi!'
                     }
                 />
                 <Row>
-                    {dataNews.map((newItem, index) => (
+                    {dataWeddingPhoto.map((newItem, index) => (
                         <Col key={index} md={4} className="gx-5 my-4">
                             <NewItem title={newItem.title} img={newItem.img} />
                         </Col>
@@ -36,4 +37,4 @@ function News() {
     );
 }
 
-export default News;
+export default WeddingPhoto;

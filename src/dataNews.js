@@ -10,11 +10,6 @@ const dataNews = [
         img: 'https://bellabridal.vn/public/upload/files/384531153_629164552753502_8371566639704604650_n(2).jpg',
     },
     {
-        title: 'Muốn thuê váy cưới đẹp, soiree cưới đẹp Nha Trang nàng dâu nên làm thế nào?',
-        desc: 'Thuê váy cưới đẹp, soiree cưới đẹp Nha Trang - Hiện nay có quá nhiều cửa hàng cho thuê áo cưới nên các nàng thường hay bị hoang mang với hàng ngàn câu hỏi “Thuê váy cưới ở đâu đẹp?”, “Làm thế nào thuê áo cưới đẹp ưng ý?”,… Để thuê một chiếc soiree cưới đẹp tôn dáng với chi phí phù hợp không khó, chỉ cần lưu ý một vài điểm mà Bella Bridal gợi ý dưới đây, nàng sẽ toả sáng lộng lẫy trong ngày vui mình.',
-        img: 'https://bellabridal.vn/public/upload/files/l.jpg',
-    },
-    {
         title: 'Tinh hoa hội tụ trong show diễn váy cưới Le Jardin tại Rustic Studio Hồ Chí Minh',
         desc: 'Sau 365 ngày thai nghén, kỳ công chuẩn bị từng chút từng chút thì show diễn váy cưới đặc biệt nhất ngành cưới năm nay “ Le Jardin ” đã chính thức trở thành hiện thực và có một kết quả thật mãn nhãn.',
         img: 'https://bellabridal.vn/public/upload/files/z4956242741700_631cc0aed2a839be66ad615adf921da8.jpg',
@@ -48,6 +43,11 @@ const dataNews = [
         title: 'Váy cưới thiết kế - Thiết kế & May váy áo cưới đẹp tại Bella Bridal',
         desc: 'Váy cưới thiết kế  -  Một chiếc váy cưới đẹp phải “thỏa mãn” đủ tiêu chuẩn về đường may, phom dáng, sự kết hợp giữa các chi tiết đính kết để giúp cô dâu thật nổi bật và tỏa sáng trong ngày trọng đại của cuộc đời!',
         img: 'https://bellabridal.vn/public/upload/files/274220375_1522900174759125_7328554201742947975_n.jpg',
+    },
+    {
+        title: 'Muốn thuê váy cưới đẹp, soiree cưới đẹp Nha Trang nàng dâu nên làm thế nào',
+        desc: 'Thuê váy cưới đẹp, soiree cưới đẹp Nha Trang - Hiện nay có quá nhiều cửa hàng cho thuê áo cưới nên các nàng thường hay bị hoang mang với hàng ngàn câu hỏi “Thuê váy cưới ở đâu đẹp?”, “Làm thế nào thuê áo cưới đẹp ưng ý?”,… Để thuê một chiếc soiree cưới đẹp tôn dáng với chi phí phù hợp không khó, chỉ cần lưu ý một vài điểm mà Bella Bridal gợi ý dưới đây, nàng sẽ toả sáng lộng lẫy trong ngày vui mình.',
+        img: 'https://bellabridal.vn/public/upload/files/l.jpg',
     },
 ];
 export default dataNews;
